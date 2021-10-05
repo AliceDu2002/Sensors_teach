@@ -71,6 +71,7 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousPeriodic() {
     /* show gyro values, a button to go straight and 4 buttons to turn to the target angle */
+    /* to do */
     SmartDashboard.putNumber("Yaw", gyro.getYaw());
     m_robot.arcadeDrive(m_stick.getY(), m_stick.getX());
     if(m_stick.getRawButton(2)) {
@@ -86,6 +87,7 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     /* show Encoder values, a button to move the arm to the right angle */
+    /* to do */
     arm.set(ControlMode.PercentOutput, m_stick.getRawAxis(0));
     double pos = arm.getSelectedSensorPosition();
     double vel = arm.getSelectedSensorVelocity();
